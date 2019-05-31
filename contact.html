@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AO | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/extra-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<header>
+    <input type="checkbox" id="rb" />
+    <nav id="mainNav" class="mainNav">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="/images/final-white.png" alt="nav logo"></a></div>
+            <label class="navBars" for="rb">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <section id="show-contact">
+        <div class="bg-image"></div>
+        <div class="show-content container">
+            <p class="small-txt">
+                Learn the thing i enjoy most about my work as a wed developer and few
+                other stuffs in life.
+            </p>
+            <h1 class="greet-txt"><span class="bg-txt">Contact</span></h1>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-content-wrapper">
+            <div class="follow-form container">
+                <div class="follow-social">
+                    <h1 class="header">Follow me!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eius aperiam pariatur aut nisi explicabo nesciunt quisquam unde
+                        ullam dolorum labore ipsa corporis, deserunt sed. Vel ratione
+                        reprehenderit, aliquid recusandae eius, aut unde blanditiis
+                        repudiandae vero accusantium iure autem!</p>
+                    <div class="footer-logo">
+                        <ul class="logo-icons">
+                            <li>
+                                <a href="#" class="social-face">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-twi">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-insta">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-git">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-contact-wrapper">
+                    <form action="#" class="contact-form">
+                        <label for="first-name"> First Name </label>
+                        <input type="text" id="first-name" placeholder="Enter First Name" />
+                        <label for="last-name"> Last Name </label>
+                        <input type="text" id="last-name" placeholder="Enter Last Name" />
+                        <label for="email"> Email </label>
+                        <input type="email" id="email" placeholder="Enter Email.." />
+                        <label for="cell-phone"> Cell Phone </label>
+                        <input type="tel" id="cell-phone" placeholder="Enter Phone Number" />
+                        <label for="message"> Message </label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type Message."></textarea>
+                        <button type="submit" class="btn btn-col">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-box" id="map"></div>
+
+        </div>
+    </section>
+    <section>
+        <div class="image-lightbox">
+            <div class="row">
+                <div class="column">
+                    <img src="https://unsplash.it/640" style="width:100%" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="https://unsplash.it/425" style="width:100%" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="https://unsplash.it/542" style="width:100%" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="https://unsplash.it/245" style="width:100%" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow cursor">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="https://unsplash.it/640" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="https://unsplash.it/425" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="https://unsplash.it/542" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="https://unsplash.it/245" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="column">
+                        <img class="view cursor" src="https://unsplash.it/640" style="width:100%"
+                            onclick="currentSlide(1)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="view cursor" src="https://unsplash.it/425" style="width:100%"
+                            onclick="currentSlide(2)" alt="Snow">
+                    </div>
+                    <div class="column">
+                        <img class="view cursor" src="https://unsplash.it/542" style="width:100%"
+                            onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="view cursor" src="https://unsplash.it/245" style="width:100%"
+                            onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quote">
+        <div class="get-quote container">
+            <img class="ao-logo" src="/images/final-white.png" alt="footer logo">
+            <h1 class="">Andral Orelus</h1>
+            <p>Web Design / Web Developer</p>
+            <div class="col-about">
+                <div class="address">
+                    <h2>Address :</h2>
+                    <p>South Beach, Miami <br>
+                        Florida, USA.</p>
+                </div>
+                <div class="email">
+                    <h2>Email :</h2>
+                    <p>andral@company.com</p><br>
+                </div>
+                <div class="phone">
+                    <h2>Phone number :</h2>
+                    <p>+1 (576) 456 - 4387</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p class="contact-footer"> &copy; 2019 by Andral Orelus all rights reserved</p>
+    </footer>
+</body>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYs3obcXZDF67YcyUXBary7JkW5tSx228&callback=initMap">
+    </script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
